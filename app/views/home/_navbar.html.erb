@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+    </style>
+</head>
+<body class="mx-4 md:mx-8 lg:mx-16">
+    <nav class="flex items-center justify-between p-3">
+        <div class="flex items-center">
+            <img src="/images/logo.png" alt="Logo" class="w-8 h-8">
+            <span class="text-lg md:text-xl ml-2">Tech<strong>Solutions</strong></span>
+        </div>
+        <ul class="hidden md:flex space-x-6 text-base">
+            <li><a href="#" class="text-gray-700 hover:text-gray-900">Chi siamo</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-gray-900">Caratteristiche</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-gray-900">Prezzi</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-gray-900">Aiuto</a></li>
+        </ul>
+        <div class="flex items-center space-x-6">
+            <a href="#" class="text-gray-700 hover:text-gray-900 text-base">Accedi</a>
+            <a href="#" class="border border-red-500 text-red-500 px-4 py-2 rounded-full hover:bg-red-500 hover:text-white text-base">Registrati</a>
+        </div>
+    </nav>
+</body>
+</html>

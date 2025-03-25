@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito in costruzione</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 200px;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Sito in costruzione</h1>
-    <!-- Usa il percorso diretto per l'immagine nella cartella public -->
-    <img src="/images/logo.png" alt="Logo">
-</body>
-</html>
+<%= render 'home/navbar' %>
+<%= render 'home/carousel' %>
+<%= render 'home/counter' %>
+<%= render 'home/features' %>
+<%= render 'home/plans' %>
+<%= render 'home/map' %>
