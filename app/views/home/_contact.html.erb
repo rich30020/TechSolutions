@@ -1,0 +1,63 @@
+<!-- app/views/home/contatti.html.erb -->
+<section class="py-12 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contattaci</h2>
+    <p class="text-gray-600 mb-8">Siamo a tua disposizione per qualsiasi domanda. Contattaci tramite uno dei metodi qui sotto.</p>
+
+    <!-- Modalità di contatto -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Email -->
+      <div class="flex flex-col items-center text-gray-800">
+        <i class="fas fa-envelope text-4xl mb-3 text-red-500"></i>
+        <h3 class="text-lg font-semibold">Email</h3>
+        <p class="text-gray-600">riccardomestre17@gmail.com</p>
+      </div>
+
+      <!-- Telefono -->
+      <div class="flex flex-col items-center text-gray-800">
+        <i class="fas fa-phone-alt text-4xl mb-3 text-red-500"></i>
+        <h3 class="text-lg font-semibold">Telefono</h3>
+        <p class="text-gray-600">+39 333 988 1482</p>
+      </div>
+
+      <!-- Indirizzo -->
+      <div class="flex flex-col items-center text-gray-800">
+        <i class="fas fa-map-marker-alt text-4xl mb-3 text-red-500"></i>
+        <h3 class="text-lg font-semibold">Indirizzo</h3>
+        <p class="text-gray-600">Via Don Cesare Pellizzari 164, Meolo, Italia</p>
+      </div>
+    </div>
+
+    <!-- Social -->
+    <div class="mt-8 text-gray-600">
+      <h3 class="text-xl font-semibold mb-3">Seguici sui Social</h3>
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-facebook text-2xl"></i></a>
+        <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-twitter text-2xl"></i></a>
+        <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-linkedin text-2xl"></i></a>
+      </div>
+    </div>
+
+    <!-- Form di contatto -->
+    <div class="mt-12 max-w-lg mx-auto">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Chiedi informazioni</h3>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="name" class="block text-gray-700">Nome</label>
+          <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md" required>
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700">Messaggio</label>
+          <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="w-full bg-red-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-red-600 transition">Invia</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
