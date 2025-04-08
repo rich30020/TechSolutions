@@ -1,9 +1,22 @@
 <%= render 'home/navbar' %>
 <%= render 'home/carousel' %>
+
 <%= render 'home/counter' %>
 <%= render 'home/features' %>
 <%= render 'home/plans' %>
 <%= render 'home/map' %>
+
+<!-- Sezione Card -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Scopri le nostre sezioni</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <%= render 'home/card', image: 'vpn.jpg', title: 'VPN', description: 'Navigazione sicura e anonima ovunque tu sia.', path: track_section_path('vpn') %>
+        <%= render 'home/card', image: 'prezzi.jpg', title: 'Prezzi', description: 'Scopri i nostri piani vantaggiosi e trasparenti.', path: track_section_path('prezzi') %>
+        <%= render 'home/card', image: 'server.jpg', title: 'Server', description: 'Esplora le nostre sedi server in tutto il mondo.', path: track_section_path('server') %>
+        <%= render 'home/card', image: 'supporto.jpg', title: 'Supporto', description: 'Hai bisogno di aiuto? Il nostro team è sempre disponibile.', path: track_section_path('supporto') %>
+    </div>
+</section>
+
 <%= render 'home/feedback' %>
-<%= render 'home/newsletter'%>
+<%= render 'home/newsletter' %>
 <%= render 'home/footer' %>

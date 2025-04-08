@@ -1,0 +1,10 @@
+<section class="max-w-5xl mx-auto py-16 px-4">
+  <img src="<%= image_path('supporto.jpg') %>" alt="Supporto" class="w-full h-64 object-cover rounded-xl mb-8">
+  <h1 class="text-4xl font-bold text-gray-800 mb-4">Supporto</h1>
+  <p class="text-gray-600">Siamo qui per aiutarti: contatta il nostro team per qualsiasi dubbio o problema.</p>
+</section>
+
+<% visit = Visit.find_by(section: 'supporto') %>
+  <% if visit %>
+    <p class="text-sm text-gray-500 italic">Visite totali: <%= visit.count %></p>
+  <% end %>
