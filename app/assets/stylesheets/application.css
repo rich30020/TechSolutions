@@ -1,10 +1,56 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+/* Titolo */
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabella */
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  /* Intestazioni */
+  .product-table thead {
+    background-color: #f5f5f5;
+  }
+  
+  .product-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555555;
+  }
+  
+  /* Righe */
+  .product-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .product-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Celle */
+  .product-table td {
+    padding: 12px 15px;
+    font-size: 0.875rem;
+    color: #333333;
+  }
+  
+  .product-table td a.show-link {
+    color: #3490dc;
+    text-decoration: none;
+  }
+  
+  .product-table td a.show-link:hover {
+    color: #1d68a7;
+  }
+  

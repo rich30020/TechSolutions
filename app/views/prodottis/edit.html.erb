@@ -1,0 +1,12 @@
+<% content_for :title, "Editing prodotti" %>
+
+<h1>Editing prodotti</h1>
+
+<%= render "form", prodotti: @prodotti %>
+
+<br>
+
+<div>
+  <%= link_to "Show this prodotti", @prodotti %> |
+  <%= link_to "Back to prodottis", prodottis_path %>
+</div>

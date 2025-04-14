@@ -1,0 +1,27 @@
+<%= render 'home/navbar' %>
+
+<h1 class="title">Catalogo Prodotti</h1>
+
+<table class="product-table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Prezzo</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @prodotti.each do |prodotto| %>
+            <tr>
+                <td><%= prodotto.titolo %></td>
+                <td><%= prodotto.descrizione %></td>
+                <td><%= number_to_currency(prodotto.prezzo) %></td>
+                <td><%= link_to 'Mostra', prodotto, class: "show-link" %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+<br>
+<%= render 'home/footer' %>
